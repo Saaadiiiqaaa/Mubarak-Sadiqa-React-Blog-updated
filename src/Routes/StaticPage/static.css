@@ -181,4 +181,7 @@
       .latestimg{
           width:90%;
       }
+      .commonfix{
+        display: none;
+      }
 }
