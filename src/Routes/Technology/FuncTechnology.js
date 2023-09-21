@@ -34,7 +34,7 @@ function FuncTechnology() {
          <div className='overviewcat'>
          <p className='overview'>{d.overview}</p>
          <p className='cat'>
-          <span>{d.cat}</span>
+          <span>{d.cat}</span> &nbsp;/
           
          <span className='date'>{d.date}</span>
         

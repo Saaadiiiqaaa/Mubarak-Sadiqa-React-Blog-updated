@@ -48,7 +48,7 @@
   border-radius: 3px;
   }
   .maincontainer{
-    width: 75%;
+    width: 80%;
   }
 
   .homecontainer{
@@ -341,8 +341,17 @@
     display: block;
   }
   .latestbox{
-    display: block;
+    /* display: block; */
+        /* display: block; */
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
   }
+  .topimage {
+    width: 200px;
+    height: 120px;
+    /* padding-top: 10px; */
+}
 
   .latestimg {
     width: 100%;
@@ -371,10 +380,13 @@
 .topimg {
   width: 100%;
   /* padding-top: 1rem; */
-  height: 265px;
+  height: 300px;
   /* border-radius: 10px; */
 }
 .bigimage{
-  width: 560px;
+  width: 600px;
+}
+.toppostlast{
+  gap:30px;
 }
 }

@@ -10,7 +10,7 @@ function TechTopPost() {
   
     
     const Filter =data.filter((item)=>item.cat==="Technology" && item.for ==="TopPostmain" );
-    const Filter2 =data.filter((item)=>item.cat==="Technology" && item.for ==="TopPost" );
+    const Filter2 =data.filter((item)=>item.cat==="Technology"  );
     const handleNav=(d)=>{
       navi(`/${d.cat}/${d.id}`, { state: d });
     }
@@ -47,7 +47,7 @@ function TechTopPost() {
               <hr className='line3'/>
               </div>
 
-                {Filter2.map((d)=>(
+                {Filter2.slice(6,10).map((d)=>(
             <div key={d.id} >
               
             <div className='toppostflex2'>

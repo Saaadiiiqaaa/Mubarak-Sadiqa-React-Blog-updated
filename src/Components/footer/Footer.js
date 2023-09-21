@@ -18,10 +18,10 @@ function Footer() {
         <div className='footersecondbox'>
           <div ><h3>Contact</h3>
             <div className='content'>
-              <span className="LocEmoji">📍</span> 101, Indiranagar, Bangalore.
+              <span className="LocEmoji">📍</span> 101, Vijayanagar, Bangalore.
             </div>
             <div className='content'>
-              <span className="PhoneEmoji">📞</span> +91 8080 1818
+              <span className="PhoneEmoji">📞</span> +91 76767676 00
             </div>
             <div className='content'>
               <pre><span className="MailEmoji">✉ </span>  support@thesiren.com</pre>

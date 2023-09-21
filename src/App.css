@@ -59,6 +59,10 @@ justify-content: center;
   border: 2px solid #F0F0F0;
 }
 
+.subcontainer {
+  padding-bottom: 2rem;
+}
+
 
 .lineflex{
   display: flex;
@@ -89,7 +93,7 @@ justify-content: center;
 }
 .image{
   width: 200px;
-  height: 200px;
+  height: 150px;
   
 }
 .image:hover{
@@ -101,8 +105,8 @@ justify-content: center;
   overflow: hidden;
 }
 .toppostimg{
-  width:270px;
-  height:200px;
+  width:100%;
+  height:250px;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
@@ -136,7 +140,7 @@ justify-content: space-between;
 
 .Bollysubmaincontainer {
   display: grid;
-  width: 70%;
+  width: 80%;
   gap: 25px;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -184,7 +188,7 @@ font-size: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 150px;
+  height: 107px;
 } 
 .date{
   opacity: 0.2;
@@ -195,12 +199,12 @@ font-size: 30px;
 }
 .add{
   border:2px solid black;
-  height: 500px;
+  height: 565px;
   width:100%;
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 59px;
 }
 .mobileview{
   display: none;

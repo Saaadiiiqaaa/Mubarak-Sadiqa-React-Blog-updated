@@ -13,7 +13,7 @@ function FuncStatic() {
   
   
       const location = useLocation(); 
-    // console.log(location.state.title);
+    console.log(location.state);
   return (
     
     <div className='commonParent'>
@@ -40,7 +40,10 @@ function FuncStatic() {
                 <div className='commonPic1'>
         <img className='profileImg' src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2z1jaUw5sRS4wfasqV74Q125cdS7q7GulMFTYaS2snZZNSq1F' alt=""/>
         <div className='profileName'>
-        <div>Dmitry Nozhenko</div>
+        <div className='authorname'>{location.state.Author} </div>
+        <div className='datesstatic'> {location.state.date} : <span>10 mins read</span></div>
+
+        
         {/* <DateExt dateExt={'Jan 28, 2019 · 10 min read'}/> */}
         </div>
         </div>
@@ -74,11 +77,11 @@ function FuncStatic() {
       {/* {console.log(location.state.cat)}  */}
 
 <div className='staticend'> 
-<div className='latestbox padb'> 
+<div className='latestboxstatic padb'> 
 
 {Data.filter((item)=> item.cat===`${location.state.cat}`).slice(0,4).map(d=>(
-    <div className='latestboxcard'>
-        <img src={d.img} alt="no network" className='latestimg' />
+    <div className='latestboxcard  staticpadding' >
+        <img src={d.img} alt="no network" className='latestimgstatic' />
        <div> <h2  className='latesttitle'>{d.title}</h2></div>
        <div className='latestbox2'>
        <div ><p className='latestoverview'>{d.overview}</p></div>
