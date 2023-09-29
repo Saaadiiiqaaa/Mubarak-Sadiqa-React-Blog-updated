@@ -233,7 +233,12 @@ h1.titles {
     display: block;
 
   }
-
+  .subcontainer {
+    padding-bottom: 0rem;
+}
+.line2{
+  margin-top: 0rem;
+}
   
   .navright{
     display: none;
@@ -304,4 +309,8 @@ h1.titles {
   .add{
     display: none;
   }
+  .subcontainer {
+    /* padding-bottom: 2rem; */
+    padding-bottom: 0rem;
+}
 }

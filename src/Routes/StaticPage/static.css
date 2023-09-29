@@ -55,6 +55,24 @@
     display: flex;
     gap: 25px;
 }
+.backbutton{
+    position: absolute;
+    left: 12%;
+    top: 7%;
+    padding: 7px;
+    width: 70px;
+    /* height: 70px; */
+    background-color: #2e4374;
+    border-radius: 7px;
+    color: #ffff;
+    font-weight: 800;
+    border: 1px solid #2e4374;
+}
+
+.backbutton:hover{
+    color: #2e4374;
+    background-color: transparent;
+}
 
 .icons{
     width: 80px;
@@ -207,6 +225,9 @@
     .staticpadding{
         padding:1rem 0;
     }
+    .backbutton{
+        display: none;
+    }
 }
 
 @media  (min-width:600px) and (max-width:1000px){
@@ -233,5 +254,17 @@
       .commonfix{
         display: none;
       }
+      .toppostflexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .backbutton{
+        display: none;
+    }
+
+    
 
 }

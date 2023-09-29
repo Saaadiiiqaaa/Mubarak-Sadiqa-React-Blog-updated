@@ -647,7 +647,7 @@ description: "Google hears about everyone’s sleep problems, at all hours of th
      date:" MAY 15, 2023",
     img: "https://media.istockphoto.com/id/614313140/photo/soft-beef-tacos-with-fries.jpg?s=612x612&w=0&k=20&c=KxBKdcWFKWCQwLWiil-Rgvlpl9l8SZXwkvjnCiWcia8=",
     Author:"JAMES CARTER",
-    title: "Salmon Tacos with Mango Corn Salsa",
+    title: "Salmon Tacos with Mango ",
     overview:"Super easy salmon tacos loaded with a mango, sweet corn, and cucumber salsa!",
     description: "These tacos are THE dinner for me right now! \n\n A few nights ago, I made them (again), and I set the sheet pan of salmon down on the table and my whole family literally descended upon it and started grabbing at the salmon with their hands and forks as I stood by watching in half shock, half pride. It was a feeding frenzy. \n\n Of course, we love salmon. It’s a great source of nutrition and protein and, when cooked well, it gently slides apart into buttery, juicy, delightful little flakes.\n\n But I’m not going to lie to you: the main event here is that mango corn salsa. \n\n The salmon itself is completely SOS (taco seasoning and THAT’S IT), which is why I think it makes sense to put all your effort and energy into the salsa. This salsa is also the thing that’s going to keep you sitting at the table long after you’re done eating tacos, just scooping some extra salsa bites all on its own and suddenly thinking of it as more of a salad? It can be a salad, right? I would totally eat this salsa on its own as a salad.  Each bite is extra crispy and unexpected from the raw sweet corn and cucumber with a little burst of juicy flavor. But it’s also mainstream enough with the mango that my two young kids are usually happy to devour it right along with us. \n\n I love a million sauces on my tacos (okay, fine, on every recipe). But with this one, all it needs is a bit of extra lime and honey to finish it off. Simple, minimal effort, max deliciousness."
 
@@ -662,7 +662,7 @@ description: "Google hears about everyone’s sleep problems, at all hours of th
      date:"MARCH 27, 2023 ",
     img: "https://pinchofyum.com/wp-content/uploads/Carrot-Cake-Coffee-Cake-1-1200x1200.jpg",
     Author:"JAMES CARTER",
-    title: "Carrot Cake Coffee Cake butter",
+    title: "Carrot Cake Coffee ",
     overview:"Carrot Cake Coffee Cake! A super easy batter loaded with shredded carrots, topped with a thick crumbly cinnamony streusel, and finished with a melty sweet honey butter.",
     description: "This recipe is a fan favorite for spring and was originally published in 2021. It is also part of this year’s Spring Bucket List! Find out more about the bucket list here. I know it might be confusing – carrot cake, which is like vegetables meets cake, but also still cake, combined with coffee cake, which is also cake but the kind you can eat for breakfast and it will still be totally appropriate and, obviously, cakey? But no need to be confused.  If you like a carrot cake that tastes just slightly cinnamony and teeters perfectly between springy and dense…  And you like a coffee cake that is loaded with a mega amount of streusel topping… And you like cakes that look beautiful and taste even more beautiful with a proper shmear of honey butter… nI HELLO! Meet your one true match. This one is for you. "
   },
@@ -675,7 +675,7 @@ description: "Google hears about everyone’s sleep problems, at all hours of th
      date:"MARCH 6, 2023 ",
     img: "https://pinchofyum.com/wp-content/uploads/salmon-burgers-on-a-plate-800x800.jpg",
     Author:"JAMES CARTER",
-    title: "Yummy Salmon Burgers with Slaw",
+    title: "Yummy Salmon Burgers ",
     overview:"These salmon burgers are THE YUMMIEST! and made with just five ingredients. The best for a quick + easy high protein lunch or dinner.",
     description: "These salmon burgers. They are just so extremely good. \n\n  We’re talking crispy outsides, flaky insides, and a perfect golden color, not to mention lots of nutrition, THANK YOU SALMON. \n\n They are also easy to make and require (usually) minimal, if not zero, grocery shopping, assuming you keep a decently stocked pantry. I love, love, love these crispy pan-fried little guys. \n\n And as if the salmon burgers weren’t good enough already to eat on their own (which, um, they are), I need you to make this slaw to serve your salmon burgers in/on/around. It is nothing fancy – just a shredded cabbage, yogurt, herbs, garlic, and vinegar situation, but paired with the salmon burgers? The crispy-salty-tangy combo is an ON-POINT combo. "
   },

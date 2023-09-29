@@ -15,6 +15,7 @@ function Footer() {
           <div className='content reserve'> <span>©</span>2023.The Siren. All Rights reserved</div>
         </div>
 
+{/* <div className='secondcommoncontainer'> */}
         <div className='footersecondbox'>
           <div ><h3>Contact</h3>
             <div className='content'>
@@ -40,6 +41,7 @@ function Footer() {
         </div>
       </div>
     </div>
+  // </div>
   )
 }
 

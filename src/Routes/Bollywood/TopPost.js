@@ -4,6 +4,8 @@ import {  useNavigate } from 'react-router-dom';
 import GeneralHeading from '../../Components/Heading';
 import "../../App.css"
 import Advertisement from '../../Components/Advatisement/Advertisement';
+
+
 function TopPost() {
   const [data] = useContext(AppData);
   const navi =useNavigate();
@@ -18,10 +20,10 @@ function TopPost() {
   return (
     
     <>
-    <div className='Toppost'>
-        <div>
-        <GeneralHeading HeaderText={'TopPost'}/>
-        {Filter.map((d)=>(
+  <div className='Toppost'>
+         <div>
+       <GeneralHeading HeaderText={'TopPost'}/>
+       {Filter.map((d)=>(
             <div key={d.id} className='toppostflex'>
               
             <div >
@@ -40,13 +42,16 @@ function TopPost() {
         ))}
 </div>
 
-<div>
-<div>
-              <hr className='line3'/>
-              </div>
+ <div>
 
+ <div>
+          <hr className='line3'/>
+          </div>
+          <div className='toppostflexcontainer'>
+   
                 {Filter2.slice(6,10).map((d)=>(
-            <div key={d.id} >
+                 
+            <div key={d.id} className='toppostflexcard'>
               
             <div className='toppostflex2'>
             <img className='toppostimg2' src={d.img} onClick={()=>handleNav(d)}/>
@@ -59,17 +64,20 @@ function TopPost() {
                  
                 </div>
                 </div>
+               
 
-             <hr className='line3'/> 
+             {/* <hr className='line3'/>  */}
                 
             </div>
 
             
         ))}
+        </div>
         
         <Advertisement/>
     </div>
     </div>
+
     </>
   )
 }

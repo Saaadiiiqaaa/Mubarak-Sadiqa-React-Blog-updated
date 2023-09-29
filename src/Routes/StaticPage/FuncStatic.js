@@ -2,16 +2,17 @@ import React,{useContext} from 'react'
 
 import "./static.css"
 
-import {   Link, useLocation } from 'react-router-dom';
+import {   Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from '../../Components/logo';
 import { AppData } from '../../Utility/ContextStore/contextApi';
 import clap from '../../Components/images/rythm.svg'
 import share from '../../Components/images/share.svg'
+import Home from '../Home';
 
 function FuncStatic() {
     const [Data]=useContext(AppData);
   
-  
+  const navi =useNavigate()
       const location = useLocation(); 
     console.log(location.state);
   return (
@@ -31,6 +32,7 @@ function FuncStatic() {
         <div className='flexProperty'>
             <hr className='commonPageHr'/>
         </div>
+        <button onClick={()=>{navi(-1)}} className='backbutton'> Back</button>
         <div className='mainContainer blogDescrCont'>
         <div className='commonContainer'>
             <div>
@@ -47,6 +49,7 @@ function FuncStatic() {
         {/* <DateExt dateExt={'Jan 28, 2019 · 10 min read'}/> */}
         </div>
         </div>
+        
         <div className='commonPic2'>
             <img className='icons' alt='' src='https://freepngimg.com/thumb/social_media/74031-instagram-icons-media-youtube-computer-facebook-social-thumb.png'/>
         </div>

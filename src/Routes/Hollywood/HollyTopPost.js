@@ -44,28 +44,32 @@ function HollyTopPost() {
               <hr className='line3'/>
               </div>
 
-                {Filter2.slice(6,10).map((d)=>(
-            <div key={d.id} >
-              
-            <div className='toppostflex2'>
-            <img className='toppostimg2' src={d.img} onClick={()=>handleNav(d)}/>
-            
-            <div className='topposttitle2'>
-                  <div> <p className='title' onClick={()=>handleNav(d)}>{d.title}</p></div>
-            
-                 <div>  <span className='toppostcat2'>{d.cat}</span>
-                 <span className='datetop'>{d.date}</span></div>
-                 
-                 
-                </div>
-                </div>
-                <hr className='line3'/>
-              
-                
-            </div>
+              <div className='toppostflexcontainer'>
+   
+   {Filter2.slice(6,10).map((d)=>(
+    
+<div key={d.id} className='toppostflexcard'>
+ 
+<div className='toppostflex2'>
+<img className='toppostimg2' src={d.img} onClick={()=>handleNav(d)}/>
+<div className='topposttitle2'>
+     <div> <p className='title' onClick={()=>handleNav(d)}>{d.title}</p></div>
 
-            
-        ))}
+    <div>  <span className='toppostcat2'>{d.cat}</span>
+    <span className='datetop'>{d.date}</span></div>
+    
+    
+   </div>
+   </div>
+  
+
+{/* <hr className='line3'/>  */}
+   
+</div>
+
+
+))}
+</div>
         
         <Advertisement/>
     </div>
