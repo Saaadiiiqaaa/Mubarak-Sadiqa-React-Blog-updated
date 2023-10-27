@@ -1,19 +1,31 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { AppData } from '../../Utility/ContextStore/contextApi'
-import {  useNavigate } from 'react-router-dom';
+import {  useNavigate, useParams } from 'react-router-dom';
 import GeneralHeading from '../../Components/Heading';
 import "../../App.css"
 import Advertisement from '../../Components/Advatisement/Advertisement';
-
+import { host } from '../../Components/constants/Constants';
+import axios from 'axios'
 
 function TopPost() {
-  const [data] = useContext(AppData);
+  // const [data] = useContext(AppData);
   const navi =useNavigate();
-  
+  const {cat} = useParams()
+
+  const [data,setData]= useState([])
+
+  useEffect(()=>{
+    const Api =`${host}/api/blog/${cat}`
+    axios.get(Api)
+    .then((result)=>setData(result.data))
+    .catch(err=>console.log('error in fetching the data',err))
+ 
+ },[cat])
     
-    const Filter =data.filter((item)=>item.cat==="Bollywood" && item.for ==="TopPostmain" );
+    const Filter =data.filter((item)=>item.for ==="TopPostmain" );
+    // const Filter =data.filter((item)=>item.cat==="Bollywood" && item.for ==="TopPostmain" );
     // const Filter2 =data.filter((item)=>item.cat==="Bollywood" && item.for ==="TopPost" );
-    const Filter2 =data.filter((item)=>item.cat==="Bollywood"  );
+    // const Filter2 =data.filter((item)=>item.cat==="Bollywood"  );
     const handleNav=(d)=>{
       navi(`/${d.cat}/${d.id}`, { state: d });
     }
@@ -49,7 +61,7 @@ function TopPost() {
           </div>
           <div className='toppostflexcontainer'>
    
-                {Filter2.slice(6,10).map((d)=>(
+                {data.slice(6,10).map((d)=>(
                  
             <div key={d.id} className='toppostflexcard'>
               

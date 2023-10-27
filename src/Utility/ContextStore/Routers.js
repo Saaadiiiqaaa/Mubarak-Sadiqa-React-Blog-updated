@@ -12,13 +12,13 @@ function Routers() {
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Home/> }/>
-        <Route path="/Bollywood" element={<Bollywood/>}/>
+        <Route path="/:cat" element={<Bollywood/>}/>
         
 
-        <Route path="/Technology" element={<Technology/>}/>
+        {/* <Route path="/Technology" element={<Technology/>}/>
         <Route path="/Hollywood" element={<Hollywood/>}/>
         <Route path="/Fitness" element={<Fitness/>}/>
-        <Route path="/Food" element={<Food/>}/>
+        <Route path="/Food" element={<Food/>}/> */}
         <Route path="/:cat/:id" element={<StaticPage/>}/>
 
     </Routes>

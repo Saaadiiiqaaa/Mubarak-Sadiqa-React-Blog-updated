@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext,useState, useEffect } from 'react'
+import { host } from '../../Components/constants/Constants';
+import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import { AppData } from '../../Utility/ContextStore/contextApi';
 import GeneralHeading from '../../Components/Heading';
@@ -6,12 +8,22 @@ import Advertisement from './Advertisement'
 
 
 function TopPPost() {
-    const [Data]=useContext(AppData);
+    // const [Data]=useContext(AppData);
+    const [data,setData]= useState([])
     const navi =useNavigate();
 
     const handleImg=(d)=>{
         navi(`/${d.cat} /${d.id}` ,{state:d})
     }
+
+    useEffect(()=>{
+        const Api =`${host}/api/all-data`
+        axios.get(Api)
+        .then((result)=>setData(result.data))
+        .catch(err=>console.log('error in fetching the data',err))
+     
+     },[])
+
   return (
     <div className='toppostcontainer'>
         <div className='Advertisement'>
@@ -19,7 +31,7 @@ function TopPPost() {
         </div>
         <GeneralHeading HeaderText={"TopPost"}/>
         
-       { Data.filter((item)=> item.sp==="Home-TopPostA").map((d)=>(
+       { data.filter((item)=> item.sp==="Home-TopPostA").map((d)=>(
         <div>
         <img src={d.img} onClick={()=>handleImg(d)} className='topimg' alt="No Network"/>
         <div><h2 onClick={()=>handleImg(d)} className='toptitle1'>{d.title}</h2></div>
@@ -32,7 +44,7 @@ function TopPPost() {
        ))}
 
        {
-        Data.filter((item)=>item.sp ==="Home-TopPostB" ).map((d)=>(
+        data.filter((item)=>item.sp ==="Home-TopPostB" ).map((d)=>(
             <div >
                 <div className='verticalflex'>
                 <div className='toppostlast'>

@@ -1,18 +1,30 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./Home.css"
+import { host } from '../../Components/constants/Constants';
+import axios from 'axios'
 
 import { AppData } from '../../Utility/ContextStore/contextApi';
 import { useNavigate } from 'react-router-dom';
+
 function Banner() {
-    console.log("hii")
-    const [Data] =useContext(AppData)
-    console.log(Data)
+    // console.log("hii")
+    // const [Data] =useContext(AppData)
+    // console.log(Data)
+    const [data,setData]= useState([])
     const navi =useNavigate();
 
-    const Filter1=Data.filter(
+    useEffect(()=>{
+      const Api =`${host}/api/all-data`
+      axios.get(Api)
+      .then((result)=>setData(result.data))
+      .catch(err=>console.log('error in fetching the data',err))
+   
+   },[])
+
+    const Filter1=data.filter(
         (item)=> item.sp === "home-banner"
         );
-    const Filter2=Data.filter(
+    const Filter2=data.filter(
         (item)=> item.sp === "home-ban"
         );
 

@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext,useState, useEffect } from 'react'
+import { host } from '../../Components/constants/Constants';
+import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import { AppData } from '../../Utility/ContextStore/contextApi';
 import GeneralHeading from '../../Components/Heading';
@@ -6,19 +8,30 @@ import GeneralHeading from '../../Components/Heading';
 
 
 function LatestArticle() {
-    const [Data]=useContext(AppData);
+    const [data,setData]= useState([])
+    // const [Data]=useContext(AppData);
     const navi =useNavigate();
 
     const handleImg=(d)=>{
         navi(`/${d.cat} /${d.id}` ,{state:d})
     }
+
+    
+    useEffect(()=>{
+        const Api =`${host}/api/all-data`
+        axios.get(Api)
+        .then((result)=>setData(result.data))
+        .catch(err=>console.log('error in fetching the data',err))
+     
+     },[])
+
   return (
     <div className='latestArticlecontainer'>
         <GeneralHeading HeaderText={"Latest Article "}/>
         <div className='latestarticlefullbox'>
         <div className='latestarticle'>
 
-       { Data.filter((item)=> item.sp==="latestArticle").map((d)=>(
+       { data.filter((item)=> item.sp==="latestArticle").map((d)=>(
       
         <div className='latestarticlecard'>
            
@@ -42,7 +55,7 @@ function LatestArticle() {
     </div>
     <div>
        {
-        Data.filter((item)=>item.sp ==="latestArticlebig" ).map((d)=>(
+        data.filter((item)=>item.sp ==="latestArticlebig" ).map((d)=>(
             <div>
             <img src={d.img} alt="No network" onClick={()=>handleImg(d)} className='bigimage'/>
             {/* <div><h2 onClick={()=>handleImg(d)} className='bigtitle'>{d.title}</h2> */}
